@@ -1,0 +1,54 @@
+export enum LOGIN_PHASES_ENUMS {
+    LOGGED_IN = 'LOGGED_IN',
+    LOGGED_OUT = 'LOGGED_OUT',
+    WAITING_FOR_RESPONSE = 'WAITING_FOR_RESPONSE'
+}
+
+export enum GAME_ACTION_TYPE_ENUMS {
+    LOGIN = "LOGIN_ACTION",
+    LOGOUT = "LOGOUT_ACTION",
+    SET_WEB_SOCKET_SERVER_STATUS = "SET_WEB_SOCKET_SERVER_STATUS_ACTION",
+    SET_ROOM_LIST = "SET_ROOM_LIST_ACTION",
+    SET_ACTIVE_ROOM = "SET_ACTIVE_ROOM_ACTION",
+    SET_ROOM_TURN_STATE = "SET_ROOM_TURN_STATE_ACTION",
+    APPEND_ROOM_TURN_HISTORY_ITEM = "APPEND_ROOM_TURN_HISTORY_ITEM_ACTION",
+    PURGE_ROOM_STATE = "PURGE_ROOM_STATE_ACTION"
+}
+
+export enum SOCKET_MANAGER_CONNECTION_STATUSES {
+    WAITING = 'WAITING',
+    CONNECTED = 'CONNECTED',
+    DISCONNECTED = 'DISCONNECTED'
+}
+
+export enum ROOM_TYPES {
+    HUMAN = "human",
+    CPU = "cpu"
+}
+
+export enum TURN_STATUS {
+    WAIT = "wait",
+    PLAY = "play",
+    NOT_STARTED = "notstarted",
+    WON = "won",
+    LOST = "lost",
+    WAITING_FOR_PLAYER = "WAITING_FOR_PLAYER",
+    READY = "READY"
+}
+
+
+export enum SOCKET_EVENTS {
+    ON_CONNECT = "connect",
+    ON_CONNECTION_ERROR = "connect_error",
+    ON_MESSAGE = "message",
+    ON_TURN_INFO_CHANGED = "activateYourTurn",
+    ON_MOVE = "randomNumber",
+    ON_LIST_TRIGGER = "listTrigger",
+    ON_READY = "onReady",
+    ON_GAME_OVER = "gameOver",
+    EMIT_LOGIN = "login",
+    EMIT_JOIN_ROOM = "joinRoom",
+    EMIT_LEAVE_ROOM = "leaveRoom",
+    EMIT_START_OFFER = "letsPlay",
+    EMIT_SEND_MOVE = "sendNumber"
+}
